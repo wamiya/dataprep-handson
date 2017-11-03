@@ -10,8 +10,8 @@ nkf -g kankyo.csv
 #convert
 nkf -w --overwrite kankyo.csv
 
-#active project
-gcloud config list
+#check charcode
+nkf -g kankyo.csv
 
 #create bucket
 gsutil mb gs://${DEVSHELL_PROJECT_ID}-dataprep/
