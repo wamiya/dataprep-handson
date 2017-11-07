@@ -11,6 +11,6 @@ nkf -w --overwrite kankyo.csv
 nkf -g kankyo.csv
 
 #3.upload gcs
-gsutil mb gs://${DEVSHELL_PROJECT_ID}-dataprep/
+gsutil mb -c regional -l us-east1 gs://${DEVSHELL_PROJECT_ID}-dataprep/
 gsutil cp kankyo.csv gs://${DEVSHELL_PROJECT_ID}-dataprep/
 
